@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />		
 		<title>CELDA</title>
 	</head>
-	<body onload="miCanvas.inicializar()">
-		<canvas id="micanvas" width="miCanvas.getWitdh()" height="miCanvas.getHeight()">
+	<body onload="miCanvas.inicializar()" style="background:grey">
+		<!--<canvas id="micanvas" width="miCanvas.getWitdh()" height="miCanvas.getHeight()"> -->
+		<canvas id="micanvas">
 			Este texto se muestra para los navegadores no compatibles con canvas.
 			<br>
 			Por favor, utiliza Firefox, Chrome, Safari u Opera.
 		</canvas>
 		<br>
-		<input type="button" value="Avanzar" onClick="miCanvas.avanzar()">
-		<br>
-		<select id="mapas">
-		</select>
-		<br>	
-		<button type="button" onclick="miCanvas.cargarRecorrido()">cargar recorrido</button>
-		<br>
-		<form>
-			Anchura: <input id="width" type="text" name="width"><br>
-			Altura: <input id="height" type="text" name="height"><br>
-			<input type="button" value="Submit" onClick="miCanvas.cargarValores()">
-		</form>
+		<div id="opciones">
+			<input type="button" value="Avanzar" onClick="miCanvas.avanzar()">
+			<br>
+			<select id="mapas">
+			</select>
+			<br>	
+			<button type="button" onclick="miCanvas.cargarRecorrido()">cargar recorrido</button>
+			<br>
+			<form>
+				Anchura: <input id="width" type="text" name="width"><br>
+				Altura: <input id="height" type="text" name="height"><br>
+				<input type="button" value="Submit" onClick="miCanvas.cargarValores()">
+			</form>
+		</div>
 		<script language="javascript" src="jquery.js"/> </script>
 		<script src="impl.js"/></script> 	
 	</body>
