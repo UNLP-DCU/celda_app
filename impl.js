@@ -22,7 +22,7 @@ var miCanvas = (function (){
 	matrix = [];
 	width = 10;
 	height = 10;
-	avance = [ 1,1,1,7,1,1,1,1,1,1,7,7,7,7,7,7,7,7];
+	avance = [ 1,1,1,7,1,1,1,1,1,1,7,7,7,8,8,5,5,1,1,7,7,7,7,7,7,7];
 	posicionX = 0;
 	posicionY = 0;
 	posicion = 0;
@@ -35,7 +35,7 @@ var miCanvas = (function (){
 		dimension : 25
 	};
 	
-	inicializarPrivada = function(){
+	inicializarPrivada = function(){		
 		funcionDeDibujoPrivada();
 		cargarListaMapasPrivada();
 	}
@@ -81,7 +81,7 @@ var miCanvas = (function (){
 				cuadradoMovil = contexto.getImageData(cuadrado.posx, cuadrado.posy, cuadrado.dimension, cuadrado.dimension); 
 				canvas_arrow((posicionX * 50) - 15, (posicionY * 50) - 15, (posicionX * 50) + 15, (posicionY * 50) - 15);
 				console.log("adaad");
-				switch ( avance [ posicion ] ) {
+				/*switch ( avance [ posicion ] ) {
 					case 1: //MOVIMIENTO IZQUIERDA A DERECHA
 					case 6: //MOVIMIENTO ARRIBA Y DERECHA 0 ABAJO Y DERECHA
 						console.log("A");
@@ -103,7 +103,7 @@ var miCanvas = (function (){
 						console.log("D");
 						posicionY = posicionY - 1;
 						break;
-				}
+				}*/
 		  }
 		}
 	}
@@ -208,29 +208,32 @@ var miCanvas = (function (){
 				console.log("A");
 				if ( matrix[posicionX+1][posicionY] != 1) { 					
 					posicionX = posicionX + 1;
-				} else { alert("OBSTACULO!"); pintar = false; }
+					decir("derecha");
+				} else { decir("obstáculo"); pintar = false; }
 				break;
 			case 2: //MOVIMIENTO ARRIBA A ABAJO
 			case 7: //MOVIMIENTO DERECHA Y ABAJO O IZQUIERDA Y ABAJO
 				console.log("B");
 				if ( matrix[posicionX][posicionY+1] != 1) { 					
 					posicionY = posicionY + 1;
-				} else { alert("OBSTACULO!"); pintar = false; }				
+					decir("abajo");
+				} else { decir("obstáculo"); pintar = false; }				
 				break;
 			case 3: //MOVIMIENTO DERECHA A IZQUIERDA
 			case 8: //MOVIMIENTO ABAJO Y IZQUIERDA O ARRIBA Y IZQUIERDA
 				console.log("C");
 				if ( matrix[posicionX-1][posicionY] != 1) { 					
 					posicionX = posicionX - 1;
-				} else { alert("OBSTACULO!"); pintar = false; }
-				posicionX = posicionX - 1;
+					decir("izquierda");
+				} else { decir("obstáculo"); pintar = false; }				
 				break;
 			case 4: //MOVIMIENTO ABAJO A ARRIBA
 			case 5: //MOVIMIENTO IZQUIERDA Y ARRIBA 0 DERECHA Y ARRIBA
 				console.log("D");
 				if ( matrix[posicionX][posicionY-1] != 1) { 					
 					posicionY = posicionY - 1;
-				} else { alert("OBSTACULO!"); pintar = false; }				
+					decir("arriba");
+				} else { decir("obstáculo"); pintar = false; }				
 				break;
 		}
 				 					
@@ -243,7 +246,7 @@ var miCanvas = (function (){
 			contexto.stroke();				
 		}
 		if ( matrix[posicionX][posicionY] == 98) { 
-			alert("FELICIDADES! HAS LLEGADO A LA TU OBJETIVO!");
+			decir("FELICIDADES! HAS LLEGADO A TU DESTINO!");
 		}
 	}
 	
@@ -263,6 +266,40 @@ var miCanvas = (function (){
 			}
 		});
 		//funcionDeDibujoPrivada();
+	}
+	
+	//funcion que dice la palabra pasada como parametro
+	function decir(palabra){
+		if (window.SpeechSynthesisUtterance === undefined) {
+			$("#unsupported").show();
+			//document.getElementById('unsupported').remove('hidden');
+		  } else {
+			// funciona sin esto... pero por si acaso estaría bueno tenerlo a mano
+			// Workaround for a Chrome issue (#340160 - https://code.google.com/p/chromium/issues/detail?id=340160)			
+			/*
+			var watch = setInterval(function() {
+			  // Load all voices available
+			  var voicesAvailable = speechSynthesis.getVoices();
+	 
+			  if (voicesAvailable.length !== 0) {
+				for(var i = 0; i < voicesAvailable.length; i++) {
+				  voices.innerHTML += '<option value="' + voicesAvailable[i].lang + '"' +
+									  'data-voice-uri="' + voicesAvailable[i].voiceURI + '">' +
+									  voicesAvailable[i].name +
+									  (voicesAvailable[i].default ? ' (default)' : '') + '</option>';
+				}
+	 
+				clearInterval(watch);
+			  }
+			}, 1);
+			*/
+	 
+			//esto crea la palabra a decir y speak lo dice... cool hu
+			// Create the utterance object setting the chosen parameters
+			var utterance = new SpeechSynthesisUtterance(palabra);
+			utterance.lang = "es-ES";	 
+			window.speechSynthesis.speak(utterance);			
+		}
 	}
 	
 	return{
