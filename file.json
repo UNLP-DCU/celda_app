@@ -1,22 +1,28 @@
 {
-"cantMapas":3,
+"cantMapas":4,
 "mapas": [
 {	
 	"nombre":"Mapa 1",
-	"alto":4,
-	"ancho":3,
-	"recorrido": [1, 7, 8]
+	"alto":10,
+	"ancho":10,
+	"recorrido": [ 1,1,1,7,1,1,1,1,1,1,7,7,7,7,7,7,7,7]
 },
 {	
 	"nombre":"Mapa 2",
-	"alto":5,
-	"ancho":7,
-	"recorrido": [7, 6, 1]
+	"alto":10,
+	"ancho":10,
+	"recorrido": [1,1,1,1,1,1]
 },
 {	
 	"nombre":"Mapa 3",
 	"alto":1,
 	"ancho":2,
-	"recorrido": [1, 4, 2]
+	"recorrido": [1,1,1,7,7,7,7,7,1,1,1,7,1,1,1,7,7,7]
+},
+{	
+	"nombre":"Mapa 4",
+	"alto":1,
+	"ancho":2,
+	"recorrido": [1,1,1,7,7,7,7,7,1,1,1,1]
 }]
 }
