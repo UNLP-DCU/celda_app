@@ -1,0 +1,28 @@
+{
+  "name": "celda_app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/UNLP-DCU/celda_app",
+  "authors": [
+    "Celda Team"
+  ],
+  "description": "PoC indoor gamificated positioning system",
+  "main": "celda-app.html",
+  "keywords": [
+    "PoC",
+    "indoor",
+    "positioning"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
