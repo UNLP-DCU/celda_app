@@ -5,14 +5,15 @@ Parte de la aplicación experimental Celda. Permite correr los mapas generador p
 
 ## Para correrlo localmente
 
-´´´bash
-git clone https://github.com/UNLP-DCU/celda_app.git
-bower install
-´´´
-
-Luego, abre con algún navegador moderno el archivo celda-app.html
+```bash
+$ git clone https://github.com/UNLP-DCU/celda_app.git
+$ bower install
+``` 
 
 
-Nota: es necesario tener instalado npm ([ver nodejs.org](http://nodejs.org/)) y bower ([bower.io](http://bower.io/)).
+Luego, abre con algún navegador moderno el archivo: celda-app.html
+
+
+_Nota: es necesario tener instalado npm ([ver nodejs.org](http://nodejs.org/)) y bower ([ver bower.io](http://bower.io/))._
 
 
