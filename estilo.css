@@ -1,0 +1,10 @@
+html, body {
+  background: grey;
+}
+#micanvas {
+  position: absolute; 
+	height: 100%;
+  width:  90%;
+  top: 0px;
+  left: 120px;
+} 
