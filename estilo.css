@@ -1,10 +1,38 @@
-html, body {
+/*html, body {
   background: grey;
-}
-#micanvas {
+}*/
+/* #micanvas {
   position: absolute; 
-	height: 100%;
-  width:  90%;
+	height: 80%;
+  width:  70%;
   top: 0px;
   left: 120px;
-} 
+} */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* (tablet portrait and landscape)*/
+	html, body {
+		background: grey;
+		overflow-x: none;
+		overflow-y: none;
+	}
+	#micanvas {
+		position: absolute; 
+		height: 90%;
+		width:  80%;
+		top: 15px;
+		left: 120px;
+	}
+}
+@media only screen and (min-width : 1224px) {
+/* (Desktops and laptops ) */
+	html, body {
+		background: white;
+	}
+	#micanvas {
+		position: absolute; 
+		height: 95%;
+		width:  90%;
+		top: 15px;
+		left: 120px;
+	}
+}
