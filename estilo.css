@@ -8,31 +8,83 @@
   top: 0px;
   left: 120px;
 } */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (max-width: 800px) {
 /* (tablet portrait and landscape)*/
 	html, body {
-		background: grey;
-		overflow-x: none;
-		overflow-y: none;
+		background: white;		
 	}
 	#micanvas {
-		position: absolute; 
-		height: 90%;
-		width:  80%;
-		top: 15px;
-		left: 120px;
+		margin: 2%;		
+		height: 85%;
+		width:  95%;	
+		display: block;		
 	}
+	#opciones {		
+		display: inline;
+		position: relative;		
+		text-align:center;
+		width: 100px;		
+    }
+	#avanzar {		
+		display: inherit;
+		padding: 13px;
+		padding-right: 25px;
+		padding-left: 25px;
+		margin-right: 15px;
+    }
+	#mapas {		
+		display: inherit;
+		padding: 13px;
+    }
+	#cargar {		
+		display: inherit;
+		padding: 13px;
+    }
+	#tituloOpciones	 {
+		font-size: 25px;		
+		display: inherit;
+		margin-right: 20px;
+		margin-left: 10px;
+    }
 }
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 800px) {
 /* (Desktops and laptops ) */
 	html, body {
-		background: white;
+		background: grey;		
 	}
-	#micanvas {
+	#micanvas {		
+		display: block;
 		position: absolute; 
-		height: 95%;
-		width:  90%;
+		margin: 3%;
+		height: 85%;
+		width:  82%;
 		top: 15px;
 		left: 120px;
 	}
+	#opciones {	
+		margin: 18px;
+		font-size: 25px;
+		display: block;
+		position: relative;		
+		text-align:center;
+		width: 100px;		
+    }
+	#avanzar {
+		margin-top: 30px;
+		display: inherit;
+		padding: 23px;
+    }
+	#mapas {
+		margin-top: 30px;
+		display: inherit;
+		padding: 13px;
+    }
+	#cargar {
+		margin-top: 10px;
+		display: inherit;
+    }
+	#tituloOpciones	 {
+		margin-top: 10px;
+		display: inherit;
+    }
 }

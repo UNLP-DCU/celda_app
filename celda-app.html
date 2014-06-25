@@ -14,19 +14,12 @@
     </canvas>
     <br>
     <span id="unsupported" hidden = "hidden">API de sonido no soportada por el navegador</span>
-    <div id="opciones">
-      <input type="button" value="Avanzar" onClick="miCanvas.avanzar()">
-      <br>
+    <div id="opciones">	
+	  <label id="tituloOpciones" >Opciones</label>  
+      <input id="avanzar" type="button" value="Avanzar" onClick="miCanvas.avanzar()">
       <select id="mapas">
       </select>
-      <br>
-      <button type="button" onclick="miCanvas.cargarRecorrido()">cargar recorrido</button>
-      <br>
-      <form>
-        Anchura:<br> <input id="width" type="text" name="width" size="4"><br>
-        Altura:<br> <input id="height" type="text" name="height" size="4"><br>
-        <input type="button" value="Submit" onClick="miCanvas.cargarValores()">
-      </form>
+      <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar recorrido</button>  
     </div>
     <script src="public/vendor/jquery/dist/jquery.js"/></script>
 		<script type="text/javascript" src="public/vendor/speech-synthesis/polyfill.min.js"></script>
