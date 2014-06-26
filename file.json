@@ -3,38 +3,38 @@ var MAPAS = {
   "mapas": [
   {
     "nombre":"Mapa 1",
-    "alto":10,
-    "ancho":10,
-    "recorrido": [1,1,1,10,7,1,1,1,1,1,10,2,2,2,2,2,2,2],
-		"obstaculos": [[4, 0], [7, 5], [1, 5], [0, 6]],
+    "alto":12,
+    "ancho":12,
+    "recorrido": [1,1,1,10,7,1,1,1,1,1,10,2,2,2,2,2,2,2,2,2,7,1,1],
+		"obstaculos": [[4,0], [7,5], [1,5], [0,6]],
 		"inicio": [[0,0]],
-		"fin": [[9,9]]
+		"fin": [[11,11]]
   },
   {
     "nombre":"Mapa 2",
-    "alto":10,
-    "ancho":10,
-    "recorrido": [1,1,1,1,1,1],
-		"obstaculos": [[1, 1], [2, 2]],
+    "alto":5,
+    "ancho":5,
+    "recorrido": [1,10,2,2],
+		"obstaculos": [[1,1], [2,2]],
 		"inicio": [[0,0]],
-		"fin": [[9,9]]
+		"fin": [[4,5]]
 	},
   {
     "nombre":"Mapa 3",
-    "alto":2,
-    "ancho":2,
-    "recorrido": [1,10,2],
-		"obstaculos": [],
- 		"inicio": [[1,1]],
-		"fin": [[0,0]]
+    "alto":15,
+    "ancho":15,
+    "recorrido": [1,1,1,10,7,1,1,1,1,1,10,2,2,2,2,2,2,2,2,2,7,1,1],
+		"obstaculos": [[8,9],[10,6],[9,2],[2,3]],
+ 		"inicio": [[0,0]],
+		"fin": [[9,14]]
 	},
   {
     "nombre":"Mapa 4",
-    "alto":2,
-    "ancho":2,
-    "recorrido": [2,7,1],
-		"obstaculos": [],
+    "alto":8,
+    "ancho":8,
+    "recorrido": [1,1,1,10,2,2,2,2,2,7,1,1,1,1],
+		"obstaculos": [[2,2],[6,5]],
 		"inicio": [[0,0]],
-		"fin": [[1,1]]
+		"fin": [[7,6]]
   }]
 }
