@@ -8,7 +8,7 @@
   top: 0px;
   left: 120px;
 } */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
 /* (tablet portrait and landscape)*/
 	html, body {
 		background: white;		
@@ -19,7 +19,7 @@
 		width:  95%;	
 		display: block;		
 	}
-	#opciones {		
+	#opciones {			
 		display: inline;
 		position: relative;		
 		text-align:center;
@@ -40,9 +40,8 @@
 		display: inherit;
 		padding: 13px;
     }
-	#tituloOpciones	 {
-		font-size: 25px;		
-		display: inherit;
+	#tituloOpciones	 {	
+		display: inherit;		
 		margin-right: 20px;
 		margin-left: 10px;
     }
@@ -50,7 +49,7 @@
 @media only screen and (min-width : 800px) {
 /* (Desktops and laptops ) */
 	html, body {
-		background: grey;		
+		background: white;		
 	}
 	#micanvas {		
 		display: block;
@@ -88,3 +87,88 @@
 		display: inherit;
     }
 }
+
+/* TODO LO DE ARRIBA REPETIDO PERO PARA PORTRAIT Y LANDSCAPE PARA HANDHELDS */
+
+@media only screen and (max-width: 799px) and (orientation:portrait){
+/* (tablet portrait and landscape)*/
+	html, body {
+		background: white;		
+	}
+	#micanvas {
+		margin: 2%;		
+		height: 85%;
+		width:  95%;	
+		display: block;		
+	}
+	#opciones {	
+		display: inline;
+		position: relative;		
+		text-align: center;
+		height: 30px;
+		width: 50px;
+    }
+	#avanzar {		
+		display: inherit;
+		padding: 13px;
+		padding-right: 25px;
+		padding-left: 25px;
+		margin-right: 15px;
+    }
+	#mapas {		
+		display: inherit;
+		padding: 13px;
+    }
+	#cargar {		
+		display: inherit;
+		padding: 13px;
+    }
+	#tituloOpciones	 {
+		font-size: 25px;		
+		display: inherit;
+		margin-right: 20px;
+		margin-left: 10px;
+    }
+}
+@media only screen and (min-width : 800px) and (orientation:landscape)  {
+/* (Desktops and laptops ) */
+	html, body {
+		background: white;		
+	}
+	#micanvas {		
+		display: block;
+		position: absolute; 
+		margin: 3%;
+		height: 85%;
+		width:  82%;
+		top: 15px;
+		left: 120px;
+	}
+	#opciones {	
+		margin: 18px;
+		font-size: 25px;
+		display: block;
+		position: relative;		
+		text-align:center;
+		width: 100px;		
+    }
+	#avanzar {
+		margin-top: 30px;
+		display: inherit;
+		padding: 23px;
+    }
+	#mapas {
+		margin-top: 30px;
+		display: inherit;
+		padding: 13px;
+    }
+	#cargar {
+		margin-top: 10px;
+		display: inherit;
+    }
+	#tituloOpciones	 {
+		margin-top: 10px;
+		display: inherit;
+    }
+}
+
