@@ -19,6 +19,8 @@ var appView = Backbone.View.extend({
 	loadPath:function() {
 	//trigger loadPath cuando selecciona cargar recorrido en el HTML
 		alert('loadPath CALLED');
+		console.log(this.$('#mapas').val());
+		
 		
 	},
 	
@@ -34,7 +36,7 @@ var appView = Backbone.View.extend({
 	  		
 			//obtiene modelos
 			//imprimo un modelo, lo bueno q genera ya a partir del json
-			console.log(obj);
+			//console.log(obj);
 		//	console.log(obj.get('nombre'));
 		//	console.log(obj.get('recorrido'));
 			
