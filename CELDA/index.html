@@ -1,0 +1,35 @@
+<html>
+ <head>
+  
+    <script src="js/lib/jquery.js"></script>
+     <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/backbone.js"></script>	
+   <script data-main="js/app.js" src="js/lib/require.js"></script>
+  
+<!--   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="estilo.css">-->
+   <script>
+       require.config({
+        urlArgs: "bust=" +  (new Date()).getTime()
+        });
+    </script>
+  </head>
+ <body>
+ <div id="opciones">	
+  <label id="tituloOpciones" >Opciones</label>  
+	  <input id="avanzar" type="button" value="Avanzar" onClick="#">
+   <select id="mapas">
+   		<option>Seleccione un Mapa</option>
+   </select>
+  <button id="cargar" type="button" onclick="#">Cargar recorrido</button>  
+ </div>
+ 
+  <br />
+
+<canvas id='canvas' width='500' height='500'>
+	<!--not compatible-->
+<canvas>	
+
+
+ </body>
+</html>
