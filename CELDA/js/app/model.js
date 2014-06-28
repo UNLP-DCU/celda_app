@@ -13,26 +13,27 @@ var recorridoModel = Backbone.Model.extend({
 		
 		}
 	}
-	});
-  //colección de puntos json, recorrido, una colección de puntos en json...
-   var Points = Backbone.Collection.extend({
-   		model: recorridoModel,
-   	 	url: 'js/init.json',
-   	 	initialize: function(){
-   			/////
-   	  		}});
-   	 		
-				
-	 
- 
-	 recorrido = new recorridoModel();
-	 puntos = new Points();
-	 puntos.fetch({
-		success: function() { 
-			view.render(puntos);
-		}
-	 })
-
-
- 
 });
+	
+
+//colección de puntos json, recorrido, una colección de puntos en json...
+var Points = Backbone.Collection.extend({
+	model: recorridoModel,
+	url: 'js/init.json',
+	initialize: function(){
+		
+}});
+		 
+ puntos = new Points();
+
+ puntos.fetch().done(function(){
+ 	view.render(puntos);
+ })
+
+
+
+});
+
+
+//Hay que corregir, para que de aca se invoque a la vista con
+// la coleccion...
