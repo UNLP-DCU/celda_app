@@ -12,17 +12,19 @@
       <br>
       Por favor, utiliza Firefox, Chrome, Safari u Opera.
     </canvas>
-    <br>
-    <span id="unsupported" hidden = "hidden">API de sonido no soportada por el navegador</span>
+    <br>   
     <div id="opciones">	
 	  <label id="tituloOpciones" >Opciones</label>  
       <input id="avanzar" type="button" value="Avanzar" onClick="miCanvas.avanzar()">
       <select id="mapas">
       </select>
       <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar recorrido</button>  
+	  <button id="descargarMapas" type="button" onclick="miCanvas.descargarMapas()">Descargar Mapas</button> 
+	  <span id="descargarMapasMsj" hidden = "hidden">Se han descargado nuevos mapas!</span>
     </div>
     <script src="public/vendor/jquery/dist/jquery.js"/></script>
-		<script type="text/javascript" src="public/vendor/speech-synthesis/polyfill.min.js"></script>
+	<script type="text/javascript" src="public/vendor/speech-synthesis/polyfill.min.js"></script>
+	<script src="public/vendor/peerjs/peer.js"></script>
     <script src="file.json"/></script>
     <script src="lib/impl.js"/></script>
   </body>
