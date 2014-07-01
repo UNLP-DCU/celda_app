@@ -23,7 +23,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",	
-		"speech-synthesis": "latest"
+    "peerjs": "~0.3.8",
+    "jquery": "~2.1.1",
+    "speech-synthesis": "*"
   }
 }

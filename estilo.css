@@ -12,12 +12,15 @@
 /* (tablet portrait and landscape)*/
 	html, body {
 		background: white;		
+ 		font-family: Verdana;
+		overflow:hidden;
 	}
 	#micanvas {
 		margin: 2%;		
 		height: 85%;
 		width:  95%;	
-		display: block;		
+		display: block;	
+		font-size: 25px;		
 	}
 	#opciones {			
 		display: inline;
@@ -30,7 +33,7 @@
 		padding: 13px;
 		padding-right: 25px;
 		padding-left: 25px;
-		margin-right: 15px;
+		margin-right: 10px;
     }
 	#mapas {		
 		display: inherit;
@@ -42,14 +45,24 @@
     }
 	#tituloOpciones	 {	
 		display: inherit;		
-		margin-right: 20px;
+		margin-right: 8px;
 		margin-left: 10px;
+    }
+	#descargarMapas	 {
+ 		display: inherit;
+ 		padding: 13px;
+    }
+ 	#descargarMapasMsj {
+ 		font-size: small;
+ 		color: green;		
     }
 }
 @media only screen and (min-width : 800px) {
 /* (Desktops and laptops ) */
 	html, body {
-		background: white;		
+		background: white;
+ 		font-family: Verdana;		
+		overflow:hidden;
 	}
 	#micanvas {		
 		display: block;
@@ -86,12 +99,59 @@
 		margin-top: 10px;
 		display: inherit;
     }
+	#descargarMapasMsj {
+ 		font-size: small;
+ 		color: green;
+	}
 }
-
-/* TODO LO DE ARRIBA REPETIDO PERO PARA PORTRAIT Y LANDSCAPE PARA HANDHELDS */
-
+@media only screen and (max-width : 1024px) and (orientation:landscape)  {
+	/* (tablet de 7 pulgadas) */
+	html, body {
+		background: white;		
+		overflow:hidden;
+	}
+	#micanvas {		
+		display: block;
+		position: absolute; 
+		margin: 3%;
+		height: 75%;
+		width:  68%;
+		top: 15px;
+		left: 120px;
+	}
+	#opciones {	
+		margin: 18px;
+		font-size: 25px;
+		display: block;
+		position: relative;		
+		text-align:center;
+		width: 100px;		
+	   }
+	#avanzar {
+		margin-top: 30px;
+		display: inherit;
+		padding: 23px;
+	   }
+	#mapas {
+		margin-top: 30px;
+		display: inherit;
+		padding: 13px;
+	   }
+	#cargar {
+		margin-top: 10px;
+		display: inherit;
+	   }
+	#tituloOpciones	 {
+		margin-top: 10px;
+		display: inherit;
+	   }
+}
+/*  TODO LO DE ARRIBA REPETIDO PERO PARA PORTRAIT Y LANDSCAPE PARA HANDHELDS 
+	HACE RUIDO CON LO DE ARRIBA SI SE CRUZAN LOS TAMAÑOS DE PIXELES
+ */
+/* 
 @media only screen and (max-width: 799px) and (orientation:portrait){
-/* (tablet portrait and landscape)*/
+
 	html, body {
 		background: white;		
 	}
@@ -131,7 +191,7 @@
     }
 }
 @media only screen and (min-width : 800px) and (orientation:landscape)  {
-/* (Desktops and laptops ) */
+
 	html, body {
 		background: white;		
 	}
@@ -171,4 +231,4 @@
 		display: inherit;
     }
 }
-
+*/
