@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="estilo.css">
     <title>CELDA</title>
   </head>
@@ -15,9 +16,10 @@
     <div id="opciones">	
 	  <label id="tituloOpciones" >Opciones</label>  
       <input id="avanzar" type="button" value="Avanzar" onClick="miCanvas.avanzar()">
+	  <label id="tituloMapas" >Elija su mapa:</label>  
 		  <select id="mapas" for="mapas">
       </select>
-      <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar recorrido</button>  
+      <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar Mapa</button>  
 	  <button id="descargarMapas" type="button" onclick="miCanvas.descargarMapas()">Descargar Mapas</button>
 	  <span id="descargarMapasMsj" hidden = "hidden">Se han descargado nuevos mapas!</span>
     </div>
