@@ -14,19 +14,19 @@
     </canvas>
     <br>    
     <div id="opciones">	
-	  <label id="tituloOpciones" >Opciones</label>  
+	  <label id="tituloOpciones" for="mapas">Opciones</label>  
       <input id="avanzar" type="button" value="Avanzar" onClick="miCanvas.avanzar()">
-	  <label id="tituloMapas" >Elija su mapa:</label>  
-		  <select id="mapas" for="mapas">
+	  <label id="tituloMapas" for="mapas" >Elegir mapa:</label>  
+		  <select id="mapas" >
       </select>
       <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar Mapa</button>  
 	  <button id="descargarMapas" type="button" onclick="miCanvas.descargarMapas()">Descargar Mapas</button>
-	  <span id="descargarMapasMsj" hidden = "hidden">Se han descargado nuevos mapas!</span>
+	  <span id="descargarMapasMsj" hidden = "hidden">Se descargaron nuevos mapas!</span>
     </div>
-    <script src="public/vendor/jquery/dist/jquery.js"/></script>
+    <script src="public/vendor/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="public/vendor/speech-synthesis/polyfill.min.js"></script>
 		<script src="public/vendor/peerjs/peer.js"></script>
-    <script src="file.json"/></script>
-    <script src="lib/impl.js"/></script>
+    <script src="file.json"></script>
+    <script src="lib/impl.js"></script>
   </body>
 </html>
