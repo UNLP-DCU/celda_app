@@ -14,14 +14,13 @@
     </canvas>
     <br>    
     <div id="opciones">	
-	  <label id="tituloOpciones" for="mapas">Opciones</label>  
+	  <label id="tituloOpciones" for="avanzar">Opciones</label>  
       <input id="avanzar" type="button" value="Avanzar" onClick="miCanvas.avanzar()">
-	  <label id="tituloMapas" for="mapas" >Elegir mapa:</label>  
+	  <label id="tituloMapas" for="mapas">Elija su mapa:</label>  
 		  <select id="mapas" >
       </select>
-      <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar Mapa</button>  
-	  <button id="descargarMapas" type="button" onclick="miCanvas.descargarMapas()">Descargar Mapas</button>
-	  <span id="descargarMapasMsj" hidden = "hidden">Se descargaron nuevos mapas!</span>
+      <button id="cargar" type="button" onclick="miCanvas.cargarRecorrido()">Cargar Mapa</button>  	  
+	  <span id="descargarMapasMsj" hidden = "hidden">Han llegado nuevos mapas!</span>
     </div>
     <script src="public/vendor/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="public/vendor/speech-synthesis/polyfill.min.js"></script>

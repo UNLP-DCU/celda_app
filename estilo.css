@@ -11,7 +11,7 @@
 @media only screen and (orientation:portrait) {
 /* (desktop y laptops para menos de 799px)*/
 	html, body {
-		background: #F9966B;
+		background: white;
 		font-family: Verdana;			
 	}
 	#micanvas {
@@ -63,7 +63,7 @@
 @media only screen and (orientation:landscape) {
 /* (desktop y laptops para mas de 800px)*/
 	html, body {
-		background: #FFF8C6;
+		background: white;
 		font-family: Verdana;	
 	}
 	#micanvas {		
