@@ -16,7 +16,7 @@ var MAPAS = {
   {
     "nombre":"Mapa 2",
     "alto":5,
-    "ancho":5,
+    "ancho":6,
 	"orientacion_inicio":3,	
     "recorrido": [3,3,3,3],
 		"obstaculos": [[1,1], [2,2]],
@@ -27,8 +27,8 @@ var MAPAS = {
 	},
   {
     "nombre":"Mapa 3",
-    "alto":15,
-    "ancho":15,
+    "alto":20,
+    "ancho":11,
 	"orientacion_inicio":1,	
     "recorrido": [1,1,1,10,7,1,1,1,1,1,10,2,2,2,2,2,7,10,2,2,2],
 		"obstaculos": [[8,9],[10,6],[9,2],[2,3]],
@@ -39,7 +39,7 @@ var MAPAS = {
 	},
   {
     "nombre":"Mapa 4",
-    "alto":8,
+    "alto":12,
     "ancho":8,
 	"orientacion_inicio":4,	
     "recorrido": [4,4,4,4,11,3,3,3,3,3,3,3],
