@@ -10,8 +10,8 @@ _el orden no importa_
 
 ## Documento generado usando:
 
-´´´bash
+```sh
 git log --format='%aN <%aE>' | sort -f | uniq
-´´´
+```
 
-Cualquier consulta, dirigirse a la cátedra de DCU (UNLP). Gracias.
+Cualquier consulta, dirigirse a la cátedra de DCU (UNLP). Gracias. :thumbsup:
